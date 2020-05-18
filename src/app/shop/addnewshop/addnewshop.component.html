@@ -1,1 +1,69 @@
-<p>addnewshop works!</p>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Add New Shop</h1>
+      <p class="lead">Grow your customer base and business with us for free.
+        Add your shop NOW to receive new business leads!</p>
+    </div>
+  </div>
+
+  <form #newShop="ngForm" (ngSubmit)="addNewShop(newShop.value)">
+
+    <div class="form-group">
+      <input type="text" name="shopOwner" [(ngModel)]="shopOwner" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+     <input type="text" name="shopName" class="form-control" placeholder="Shop Name..." [(ngModel)]="shopName">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="address1" placeholder="1234 Main St" [(ngModel)]="address1">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="address2" placeholder="Apartment, studio, or floor"  [(ngModel)]="address2">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" placeholder="City" class="form-control" name="city"  [(ngModel)]="city">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" placeholder="State" class="form-control" name="state"  [(ngModel)]="state">
+        </div>
+        <div class="form-group col-md-2">
+          <input type="text" placeholder="Pincode" class="form-control" name="pincode"  [(ngModel)]="pincode">
+        </div>
+    </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="services1" placeholder="Add business services (separated by comma ( , ))"  [(ngModel)]="services1">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="services2" placeholder="Add business services (separated by comma ( , ))"  [(ngModel)]="services2">
+      </div>
+
+      <div class="form-group">
+         <textarea class="form-control" name="description" rows="4"
+         placeholder="Shop description..." [(ngModel)]="description"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Shop picture</label>
+        <input type="file" class="form-control-file" name="shopPicture"
+           [(ngModel)]="shopPicture" accept="image/x-png,image/jpeg">
+      </div>
+
+      <div class="form-row">
+          <div class="form-group col-md-8">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Add Shop</button>
+          </div>
+          <div class="form-group col-md-1">
+          </div>
+          <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-secondary btn-lg btn-block">Reset Shop</button>
+          </div>
+      </div>
+
+  </form>
+
+</div>

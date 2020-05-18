@@ -1,0 +1,37 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "userType": "visitor",
+      "firstName": "Blaise",
+      "lastName": "ADDEH",
+      "userGender": "he",
+      "userEmail": "test@test.com"
+    },
+    {
+      "userType": "visitor",
+      "firstName": "Daniel",
+      "lastName": "Johns",
+      "userGender": "he",
+      "userEmail": "johnsd@test.ci",
+      "id": 2
+    }
+  ],
+  "shop": [
+    {
+      "shopOwner": "Shop Owner",
+      "shopName": "ZINO",
+      "address1": "Rue des palmier Plateau",
+      "address2": "Immeuble ZERTUNI Casa",
+      "city": "Casablanca",
+      "state": "MOROCO",
+      "pincode": "12",
+      "services1": "Vente de pagnes et bijoux",
+      "services2": "Vente de produits cosmetiques",
+      "description": "Nous sommes partenaires UNIWAX",
+      "shopPicture": "C:\\fakepath\\rotary.png",
+      "id": 1
+    }
+  ],
+  "comments": []
+}

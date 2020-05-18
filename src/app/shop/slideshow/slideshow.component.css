@@ -1,0 +1,13 @@
+.registrationForm{
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background-color:skyblue;
+  top:200px;
+  right:260px;
+  margin: 5px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}

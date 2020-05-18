@@ -83,10 +83,22 @@ ng g c shop/home
 ng g c shop/footer
 
 
+13- Creation du service d'enregistrement de user
+ng g s shop/service/registration
+
+NB: Pour l'installation du serveur json
+npm i -g json-server
+
+Pour demarrer le service et acceder aux données:
+json-server shopdata.json
+
+Pour consommer le service il faut faire cette importation dans app.module.ts:
+import { HttpClientModule } from '@angular/common/http';
+et mettre HttpClientModule dans le tableau des importations.
 
 
-
-
+14- Creation du service d'enregistrement de shop
+ng g s shop/service/shop
 
 
 

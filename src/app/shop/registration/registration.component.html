@@ -1,1 +1,46 @@
-<p>registration works!</p>
+<div class="formTitle">
+   Registrater For Frre!
+</div>
+
+<form #registerUserForm="ngForm" (ngSubmit)="registerUserFromHomePage(registerUserForm.value)">
+   <div class="form-group">
+     <label for="exampleFormGender">I am</label>
+     <select class="form-control" id="exampleFormGender" name="userType" [(ngModel)]="userType" required>
+       <option selected>Visitor type...</option>
+       <option value="visitor">Visitor</option>
+       <option value="shopowner">Shop Owner</option>
+     </select>
+   </div>
+   <div  class="form-group">
+       <label for="exampleFirstName">First Name</label>
+       <input type="text" class="form-control" id="exampleFirstName" name="firstName" [(ngModel)]="firstName" required>
+       <small class="form-text text-muted">Input your first name.</small>
+   </div>
+   <div  class="form-group">
+      <label for="exampleLastName">Last Name</label>
+      <input type="text" class="form-control" id="exampleLastName" name="lastName" [(ngModel)]="lastName" required>
+      <small class="form-text text-muted">Input your last name.</small>
+   </div>
+   <div  class="form-group">
+     <label for="exampleFormGender">Gender</label>
+     <select class="form-control" id="exampleFormGender" name="userGender" [(ngModel)]="userGender" required>
+      <option selected>Gender...</option>
+      <option value="he">He</option>
+      <option value="she">She</option>
+      <option value="others">Other</option>
+     </select>
+   </div>
+
+   <div  class="form-group">
+      <label for="exampleEmail">Email Address</label>
+      <input type="email" class="form-control" placeholder="test@test.com"
+        id="exampleEmail" name="userEmail" [(ngModel)]="userEmail" required>
+      <small class="form-text text-muted">Input your email.</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary"
+       [disabled]="!registerUserForm.valid">
+       Submit
+  </button>
+
+</form>
