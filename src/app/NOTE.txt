@@ -59,3 +59,38 @@ Aller et bas et selectionner les categories d'images à télécharger
 
 5 - Creation du component shoutout
 ng g c shop/shoutout ===> importation automatique de ShoutoutComponent dans app.module.ts
+
+6- Creation du component allshops
+ng g c shop/allshops
+
+7- Creation du component addnewshop
+ng g c shop/addnewshop
+
+8- Creation du component shopdetail
+ng g c shop/shopdetail
+
+9- Creation du component contactus
+ng g c shop/contactus
+
+10- Creation du component aboutus
+ng g c shop/aboutus
+
+
+11- Creation du component home
+ng g c shop/home
+
+12- Creation du component footer
+ng g c shop/footer
+
+
+
+
+
+
+
+
+
+
+
+
+
