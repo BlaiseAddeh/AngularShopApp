@@ -18,6 +18,7 @@ import { ContactusComponent } from './shop/contactus/contactus.component';
 import { AboutusComponent } from './shop/aboutus/aboutus.component';
 import { HomeComponent } from './shop/home/home.component';
 import { FooterComponent } from './shop/footer/footer.component';
+import { SearchfilterPipe } from './shop/pipe/searchfilter.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './shop/footer/footer.component';
     ContactusComponent,
     AboutusComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SearchfilterPipe
   ],
   imports: [
     BrowserModule,

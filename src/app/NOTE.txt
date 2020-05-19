@@ -100,6 +100,9 @@ et mettre HttpClientModule dans le tableau des importations.
 14- Creation du service d'enregistrement de shop
 ng g s shop/service/shop
 
+15- Creation du filtre
+ng g pipe shop/pipe/searchfilter
+
 
 
 

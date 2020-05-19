@@ -31,8 +31,26 @@ export class AddnewshopComponent implements OnInit {
     this.shopService.addNewShop(newshop)
                     .subscribe(response => {
                         console.log(response);
+                        this.resetShopForm();
                     }, error => {
                         console.log(error);
                     });
   }
+
+  resetShopForm = () => {
+    this.newShop = {};
+    this.shopOwner = 'Shop Owner';
+    this.shopName = '';
+    this.address1 = '';
+    this.address2 = '';
+    this.city = '';
+    this.state = '';
+    this.pincode = '';
+    this.services1 = '';
+    this.services2 = '';
+    this.description = '';
+    this.shopPicture = '';
+  }
+
+
 }

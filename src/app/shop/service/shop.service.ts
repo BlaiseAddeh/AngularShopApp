@@ -14,4 +14,12 @@ export class ShopService {
     return this.http.post(this.shopRestAPI, shop);
    }
 
+   getAllShops() {
+     return this.http.get(this.shopRestAPI);
+   }
+
+   getShopById(id) {
+     return this.http.get(this.shopRestAPI + '/' + id);
+   }
+
 }

@@ -1,1 +1,39 @@
-<p>allshops works!</p>
+<br/>
+<div class="container">
+
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" name="search"
+       placeholder="Search" aria-label="Search" [(ngModel)]="searchString">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+      Search
+    </button>
+  </form>
+</div>
+<br/>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3">
+
+      <div class="col md-4 mt-2" *ngFor="let shop of shops | searchfilter:searchString">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/shopimages/1.png" style="padding-top: 10px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">{{ shop.shopName}}</h5>
+            <p class="card-text">{{shop.description}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{shop.services1}}</li>
+            <li class="list-group-item">{{shop.services2}}</li>
+            <li class="list-group-item">{{shop.city}}</li>
+          </ul>
+          <div class="card-body">
+            <a class="card-link activeLink" style="color: blue;" (click)="shopDetailPage(shop)">Details...</a>
+            <!--<a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+<br/>
+

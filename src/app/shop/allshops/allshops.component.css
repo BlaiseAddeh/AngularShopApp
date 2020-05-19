@@ -1,0 +1,9 @@
+.activeLink
+ {
+   cursor: pointer;
+ }
+
+ .activeLink:hover
+ {
+   font-weight: bold;
+ }

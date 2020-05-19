@@ -28,7 +28,7 @@ const routes: Routes = [
     component: AddnewshopComponent
   },
   {
-    path: 'shopdetail',
+    path: 'shopdetail/:shopid',
     component: ShopdetailComponent
   },
   {
